@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f4ee;
+  --foreground: #0c1f2e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f5ef;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #d4af37;
+  color: #0c1f2e;
+}
+
+.container-page {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #f2df98, #d4af37, #a77d1d);
+}
+
+.soft-card {
+  box-shadow: 0 24px 70px rgba(12, 31, 46, 0.10);
+}
