@@ -12,11 +12,29 @@ import {
   Smile,
   Sparkles,
   Stethoscope,
-  Tooth,
   UserRound,
 } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/5500000000000";
+
+function ToothIcon({ size = 25 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M8.2 3.2c1.6 0 2.4.8 3.8.8s2.2-.8 3.8-.8c2.7 0 4.7 2.2 4.2 5.7-.4 2.8-1.8 5.1-2.5 7.5-.8 2.7-1.2 4.4-2.7 4.4-1.3 0-1.6-1.7-2.1-3.6-.2-.8-.5-1.4-.7-1.4s-.5.6-.7 1.4c-.5 1.9-.8 3.6-2.1 3.6-1.5 0-1.9-1.7-2.7-4.4-.7-2.4-2.1-4.7-2.5-7.5-.5-3.5 1.5-5.7 4.2-5.7Z" />
+      <path d="M10.2 5.2c.7.4 1.1.6 1.8.6s1.1-.2 1.8-.6" />
+    </svg>
+  );
+}
 
 const quickFacts = [
   "Cirurgia bucomaxilofacial",
@@ -30,7 +48,7 @@ const services = [
     title: "Sisos e dentes inclusos",
     description:
       "Avaliação, planejamento e orientação para casos que exigem remoção cirúrgica ou acompanhamento especializado.",
-    icon: Tooth,
+    icon: ToothIcon,
   },
   {
     title: "Cirurgias bucais",
