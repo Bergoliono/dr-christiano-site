@@ -1,0 +1,5 @@
+.next
+node_modules
+dev-*.log
+qa-*.png
+public/images/brand/capa-facebook.png
